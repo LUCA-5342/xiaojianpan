@@ -1,1 +1,200 @@
-<p>111<p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改键程序</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="allbody">
+
+        <div class="changepage">
+            <h1 class="name">三键小键盘改键程序</h1>
+            <div class="KeySelect">
+                <datalist id="KeyNamelist">
+                    <option>ctrl</option>
+                    <option>shift</option>
+                    <option>enter</option>
+                    <option>delete</option>
+                    <option>home</option>
+                </datalist>
+                <datalist id="MediaKeyNamelist">
+                    <option>静音</option>
+                    <option>shift</option>
+                    <option>enter</option>
+                    <option>delete</option>
+                    <option>home</option>
+                </datalist>
+                <datalist id="FunctionKeyNamelist">
+                    <option>home</option>
+                    <option>end</option>
+                    <option>pgup</option>
+                    <option>pgdn</option>
+                    <option>ins</option>
+                </datalist>
+                <datalist id="CpKeyNamelist">
+                    <option>ctrl</option>
+                    <option>shift</option>
+                    <option>enter</option>
+                    <option>delete</option>
+                    <option>home</option>
+                </datalist>
+            </div>
+            <div class="key">
+                <div class="mainkey">
+                    <div class="btnandcontent" id="mk3">
+                        <div class="mk">
+                            <button class="mkbtn">K3</button>
+                            <div class="mk-content">
+                                <a href="#" onclick="selectfunction">普通按键</a>
+                                <a href="#">功能按键</a>
+                                <a href="#">组合按键</a>
+                                <a href="#">媒体按键</a>
+                                <a href="#">自定义值</a>
+                            </div>
+
+                        </div>
+                        <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+
+                    </div>
+                    <div class=" btnandcontent" id="mk2">
+                        <div class="mk">
+                            <button class="mkbtn">K2</button>
+                            <div class="mk-content">
+                                <a href="#">普通按键</a>
+                                <a href="#">功能按键</a>
+                                <a href="#">组合按键</a>
+                                <a href="#">媒体按键</a>
+                                <a href="#">自定义值</a>
+                            </div>
+                        </div>
+                        <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                    </div>
+                    <div class="btnandcontent" id="mk1">
+                        <div class="mk">
+                            <button class="mkbtn">K1</button>
+                            <div class="mk-content">
+                                <a href="#">普通按键</a>
+                                <a href="#">功能按键</a>
+                                <a href="#">组合按键</a>
+                                <a href="#">媒体按键</a>
+                                <a href="#">自定义值</a>
+                            </div>
+                        </div>
+                        <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                    </div>
+
+                </div>
+                <div class="sidekey">
+                    <div class="topsk">
+                        <div class="btnandcontent" id="sk3">
+                            <div class="sk">
+                                <button class="skbtn">S3</button>
+                                <div class="sk-content">
+                                    <a href="#">普通按键</a>
+                                    <a href="#">功能按键</a>
+                                    <a href="#">组合按键</a>
+                                    <a href="#">媒体按键</a>
+                                    <a href="#">自定义值</a>
+                                </div>
+                            </div>
+                            <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                        </div>
+                        <div class="btnandcontent" id="sk5">
+                            <div class="sk">
+                                <button class="skbtn">S5</button>
+                                <div class="sk-content">
+                                    <a href="#">普通按键</a>
+                                    <a href="#">功能按键</a>
+                                    <a href="#">组合按键</a>
+                                    <a href="#">媒体按键</a>
+                                    <a href="#">自定义值</a>
+                                </div>
+                            </div>
+                            <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                        </div>
+                    </div>
+                    <div class="leftsk">
+                        <div class="btnandcontent" id="sk1">
+                            <div class="sk">
+                                <button class="skbtn">S1</button>
+                                <div class="sk-content">
+                                    <a href="#">普通按键</a>
+                                    <a href="#">功能按键</a>
+                                    <a href="#">组合按键</a>
+                                    <a href="#">媒体按键</a>
+                                    <a href="#">自定义值</a>
+                                </div>
+
+                            </div>
+                            <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                        </div>
+
+                        <div class="btnandcontent" id="sk2">
+                            <div class="sk">
+                                <button class="skbtn">S2</button>
+                                <div class="sk-content">
+                                    <a href="#">普通按键</a>
+                                    <a href="#">功能按键</a>
+                                    <a href="#">组合按键</a>
+                                    <a href="#">媒体按键</a>
+                                    <a href="#">自定义值</a>
+                                </div>
+                            </div>
+                            <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                        </div>
+                    </div>
+                    <div class="bottomsk">
+                        <div class="btnandcontent" id="sk4">
+                            <div class="sk">
+                                <button class="skbtn">S4</button>
+                                <div class="sk-content">
+                                    <a href="#">普通按键</a>
+                                    <a href="#">功能按键</a>
+                                    <a href="#">组合按键</a>
+                                    <a href="#">媒体按键</a>
+                                    <a href="#">自定义值</a>
+                                </div>
+                            </div>
+                            <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                        </div>
+                        <div class="btnandcontent" id="sk6">
+                            <div class="sk">
+                                <button class=" skbtn">S6</button>
+                                <div class="sk-content">
+                                    <a href="#">普通按键</a>
+                                    <a href="#">功能按键</a>
+                                    <a href="#">组合按键</a>
+                                    <a href="#">媒体按键</a>
+                                    <a href="#">自定义值</a>
+                                </div>
+                            </div>
+                            <input class="content" type="text" list="MediaKeyNamelist" placeholder="先选功能再选键">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="yesbtn">
+                <button id="yes" onclick="selectfunction">确定修改</button>
+                <button id="no">重置修改</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
