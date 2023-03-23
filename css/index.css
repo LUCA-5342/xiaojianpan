@@ -1,1 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+.allbody {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4254f8, #559afd);
+    min-width: 1280px;
+    min-height: 720px;
+
+}
+
+.name {
+    position: absolute;
+    top: -80px;
+    left: 500px;
+    width: auto;
+    height: 60px;
+    color: white;
+}
+
+.changepage {
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #72adff 50%, #e7eef8 50%);
+    /* background-color: aliceblue; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 10%);
+
+    position: relative;
+
+}
+
+
+.key {
+
+    background-image: url("/xiaojianpan/img/3+6_rgb.png");
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center center;
+    position: relative;
+
+}
+
+.mainkey {
+
+    width: 1280px;
+    height: 100px;
+    position: relative;
+    margin-top: 15px;
+    /* text-align: center; */
+}
+
+#mk1 {
+    position: absolute;
+    left: 320px;
+    /* text-align: center; */
+    height: 100px;
+    width: 200px;
+
+
+}
+
+#mk2 {
+    position: absolute;
+    left: 540px;
+    /* text-align: center; */
+    width: 200px;
+
+}
+
+#mk3 {
+    position: absolute;
+    left: 760px;
+
+    /* text-align: center; */
+    width: 200px;
+
+
+}
+
+.mkbtn {
+    background-color: #4b6cff;
+    color: white;
+    padding: 10px;
+
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 36px;
+
+}
+
+.mk {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+
+
+}
+
+.mk-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+.mk-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.mk-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+.mk:hover .mk-content {
+    display: block;
+
+
+}
+
+.mk:hover .mkbtn {
+    background-color: #ff8800;
+}
+
+
+.sidekey {
+    width: 1280px;
+    height: 500px;
+
+    top: 15px;
+    position: relative;
+}
+
+.topsk {
+    position: relative;
+    height: 100px;
+}
+
+.leftsk {
+    position: relative;
+    height: 300px;
+
+}
+
+.bottomsk {
+    position: relative;
+    height: 100px;
+}
+
+#sk1 {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    left: 50px;
+    top: 26px;
+
+}
+
+#sk2 {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    width: 200px;
+    text-align: center;
+
+}
+
+#sk3 {
+    position: absolute;
+    width: 200px;
+    left: 425px;
+    text-align: center;
+}
+
+#sk4 {
+    position: absolute;
+    left: 425px;
+    width: 200px;
+    text-align: center;
+}
+
+#sk5 {
+    position: absolute;
+    left: 660px;
+    width: 200px;
+    text-align: center;
+}
+
+#sk6 {
+    position: absolute;
+    left: 660px;
+    width: 200px;
+    text-align: center;
+}
+
+.skbtn {
+    background-color: #4b6cff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 36px;
+}
+
+.sk {
+    position: relative;
+    display: inline-block;
+    top: 0px;
+
+}
+
+.sk-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.sk-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sk-content a:hover {
+    background-color: #f1f1f1
+}
+
+.sk:hover .sk-content {
+    display: block;
+
+}
+
+.sk:hover .skbtn {
+    background-color: #ff8800;
+}
+
+.btnandcontent {
+    position: relative;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+}
+
+.content {
+    position: relative;
+    padding: 10px 16px;
+    font-size: 16px;
+    outline-style: none;
+    border: 0px;
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 5px;
+
+
+}
+
+.keysSelect {
+    position: absolute;
+    width: 240px;
+    height: 640px;
+    left: 1030px;
+    top: 40px;
+    background-color: #72adff;
+    border-radius: 20px;
+}
+
+.yesbtn {
+    position: absolute;
+    width: 440px;
+    height: 76px;
+    top: 630px;
+    left: 420px;
+    font-size: 0;
+}
+
+#yes {
+    font-size: 20px;
+    padding: 16px;
+    background-color: #ffffff;
+    color: #72adff;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 56px;
+}
+
+#no {
+    font-size: 20px;
+    padding: 16px;
+    background-color: #72adff;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 56px;
+}
